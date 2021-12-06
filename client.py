@@ -1,7 +1,7 @@
 import socket
 import sys
  
-tcp_socket = socket.create_connection(('localhost', int(sys.argv[1])))
+tcp_socket = socket.create_connection(('0.0.0.0', 10101))
 
 port = (5555).to_bytes(2, 'big')
 current_hop = bytes([0])
